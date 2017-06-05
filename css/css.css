@@ -1,0 +1,405 @@
+
+/* G£ÓWNE*/
+@font-face{
+font-family: font1;
+src:url(../font/font1.otf);
+}
+html {
+	font-size:62.5%
+}
+body{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height:1.428571429;
+	background-image: url(../img/bg-header.jpg);
+	background-repeat: repeat-x;
+   margin: 0;
+   padding: 0;
+}
+.font1{
+		font-family:font1;
+}
+.strona{
+	max-width:960px;	
+	margin: 0 auto;
+}
+.odstepy {
+	margin-top:100px;
+}
+img{
+ max-width: 100%;
+ height:auto;
+ width:auto;
+ transition: transform 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+p{
+	font-size:2.7em;
+	letter-spacing: 0.3mm;	
+}
+
+h1{
+	font-size: 5.5vw;
+	-webkit-margin-after: 0.2em;
+	letter-spacing: 1.2mm;
+	line-height: 1; 
+}
+h2{
+	font-size: 6rem;
+	letter-spacing: 0.5mm;
+}
+h4{
+	font-size:2rem;
+	font-style: italic;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.cien{
+	 text-shadow: black 0.1em 0.1em 0.2em
+}
+/* HEADER */
+#naglowek{
+	color:white;
+}
+#zostalo{
+	color:black;
+	font-size:2rem;
+	line-height: 2rem;
+	vertical-align:middle;
+	padding-left: 50px;
+}
+#logo{
+	margin-top:40px;
+}
+.kolor2{
+	color:#fcce00;
+}
+.tylko{
+	font-size:1.4em;
+}
+
+/* TRESC */
+#tresc{
+	text-align: center;
+}
+
+a.jakdziala{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.zegar2{
+	color:black;
+	font-size:1.5rem;
+	word-spacing:5rem;
+	padding-left: 40px;
+}
+/* RESPONSYWNOŒÆ*/
+@media (max-width: 799px) {
+body{
+	background-size: auto 395px
+}
+p{
+	font-size:4vw;
+	letter-spacing: 0.3mm;	
+}
+#strona,{
+	text-align: center;
+}
+.komorka{
+	  text-align: center;
+	  	padding-left:0px;
+}
+.pusta, .pionowa {
+  display:none;
+}
+
+.komorka.jakdziala1 {
+	background-image: url(../img/jakdziala.png);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.komorka.jakdziala2 {
+	height: 50px;
+	background-image: url(../img/arrow-bottom.png);
+}
+.lewydol, .prawydol {
+	text-align:center;
+	width:auto;
+}
+
+.komorka.prawa.podtytul {
+	height:240px;
+}
+}
+
+@media (min-width: 800px) {
+.komorka
+{
+  display: table-cell;
+}
+.komorka.jakdziala2 {
+	width: 2.5%;
+	background-image: url(../img/arrow-right.png);
+}
+.lewydol{
+	width:30%;
+	float:left;	
+		text-align:left;
+}
+.prawydol{
+	width:70%;
+	float:right;
+	text-align:right;
+}	
+.komorka.prawa.podtytul {
+	padding-left:60px;
+	height:440px;	
+}
+
+}
+
+
+/* TU SIÊ ZACZYNA DIVOWA TABELKA*/
+.nadtabela {
+  position: relative;
+}
+.tabela {
+  display: table;
+  width: 100%
+}
+.wiersz {
+  display: table-row;
+}
+.komorka {
+  padding: 0;
+}
+.komorka.pusta
+{
+  width:35%;
+}
+.komorka.pionowa {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  min-width:286px;
+  max-height: 711px;
+}
+.komorka.jakdziala1 {
+	min-width:75%;
+	transition: transform 0.3s;
+	background-image: url(../img/jakdziala.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+}
+.komorka.jakdziala1:hover {
+background-image: url(../img/jakdziala2.png);
+    transform: scale(1.25);
+	
+}
+
+.komorka.jakdziala2 {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;	
+}
+/* A TU SIÊ KOÑCZY DIVOWA TABELA Z TOPKI */
+
+/* STPOPKA */
+.wroc-tlo {
+	background-color:#d7d7d7;
+   padding: 0;
+}
+.footer {
+	background-image: url(../img/bg-footer.jpg);
+	min-height:300px;
+	color:#ddd;
+	font-size:1.2rem;
+   margin: 0;
+   padding: 0;
+}
+i {
+	font-size:0.8em
+}
+
+#wroc {
+	width:100%;
+	height: 40px;
+	text-align:right;
+	margin: 0 auto;
+	line-height: 40px	
+}
+#copyright {
+	width:100%;
+	height: 40px;
+	font-size:1.2em;
+	margin: 0 auto;
+	line-height: 40px	
+}
+
+/* SLIDER */
+.carousel{
+	position:relative;
+
+	}
+.carousel-inner{
+position:relative;
+width:100%;
+overflow:hidden
+}
+.carousel-inner>.item{
+position:relative;
+display:none;
+-webkit-transition:.6s ease-in-out left;
+transition:.6s ease-in-out left
+}
+.carousel-inner>.item>img,.carousel-inner>.item>a>img{
+display:inline-block;
+height:auto;
+max-width:100%;
+line-height:1
+}
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{
+display:block
+}
+.carousel-inner>.active{
+left:0
+}
+.carousel-inner>.next,.carousel-inner>.prev{
+position:absolute;
+top:0;
+width:100%
+}
+.carousel-inner>.next{
+left:100%
+}
+.carousel-inner>.prev{
+left:-100%
+}
+.carousel-inner>.next.left,.carousel-inner>.prev.right{
+left:0
+}
+.carousel-inner>.active.left{
+left:-100%
+}
+.carousel-inner>.active.right{
+left:100%
+}
+.carousel-control{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+width:15%;
+font-size:20px;
+color:#fff;
+text-align:center;
+text-shadow:0 1px 2px rgba(0,0,0,j0.6);
+opacity:.5;
+filter:alpha(opacity=50)
+}
+
+.carousel-control.right{
+right:0;
+left:auto;
+
+}
+.carousel-control:hover,.carousel-control:focus{
+color:#fff;
+text-decoration:none;
+opacity:.9;
+filter:alpha(opacity=90)
+}
+.carousel-control .glyphicon,.carousel-control .icon-next{
+position:absolute;
+top:50%;
+left:50%;
+z-index:5;
+display:inline-block;
+
+margin-top:-10px;
+margin-left:-10px;
+font-family:serif
+}
+.carousel-control .icon-prev{
+position:absolute;
+top:50%;
+left:50%;
+z-index:5;
+display:inline-block;
+
+margin-top:-10px;
+margin-left:-50px;
+font-family:serif
+}
+
+
+
+.carousel-indicators {
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	z-index:15;
+	width:120px;
+	padding-left:0;
+	margin-left:-60px;
+	text-align:center;
+	list-style:none
+	}
+.carousel-indicators li{
+	display:inline-block;
+	width:10px;
+	height:10px;
+background-color:#353339;
+	margin-bottom:-50px;
+	text-indent:-999px;
+	cursor:pointer;
+	
+	border-radius:10px
+	}
+.carousel-indicators .active{
+	width:8px;
+	height:8px;
+	margin-bottom:-50px;
+	background-color:#fff;
+	border:1px solid #353339;
+	}
+.carousel-caption{
+	position:absolute;
+	right:15%;
+	bottom:20px;
+	left:15%;
+	z-index:10;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#fff;
+	text-align:center;
+	text-shadow:0 1px 2px rgba(0,0,0,0.6)
+	}
+.carousel-caption .btn{
+	text-shadow:none
+	}
+@media screen and (min-width:768px){
+	.carousel-control .glyphicon,.carousel-control.icon-next,.carousel-control.icon-prev{
+
+		margin-top:-15px;
+		margin-left:-15px;
+		font-size:30px
+	}
+	.carousel-caption{
+		right:20%;
+		left:20%;
+		padding-bottom:30px
+	}
+	.carousel-indicators{
+		bottom:20px
+	}
+}
